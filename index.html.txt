@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traverling – Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header id="top">
+    <nav class="navbar" id="navbar">
+      <div class="container nav-wrapper">
+        <a href="#top" class="logo">Traverling</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Explore the World with Traverling</h1>
+      <p class="hero-sub">Discover amazing destinations and create memories that last a lifetime.</p>
+      <a href="#destinations" class="btn btn-primary">Start Your Journey</a>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="destinations">
+    <div class="container">
+      <h2 class="section-title">Popular Destinations</h2>
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="images/bali.jpg" alt="Bali">
+          <div class="card-body">
+            <h3>Bali, Indonesia</h3>
+            <p>Tropical paradise with stunning beaches and vibrant culture.</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="images/paris.jpg" alt="Paris">
+          <div class="card-body">
+            <h3>Paris, France</h3>
+            <p>The city of love, lights, and unforgettable cuisine.</p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="images/tokyo.jpg" alt="Tokyo">
+          <div class="card-body">
+            <h3>Tokyo, Japan</h3>
+            <p>Blend of ancient tradition and futuristic technology.</p>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+          <img src="images/santorini.jpg" alt="Santorini">
+          <div class="card-body">
+            <h3>Santorini, Greece</h3>
+            <p>Iconic sunsets and white-washed cliff-side villages.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section id="packages" class="packages">
+    <div class="container">
+      <h2 class="section-title">Travel Packages</h2>
+      <div class="packages-grid">
+        <!-- pkg 1 -->
+        <div class="pkg-card">
+          <div class="pkg-header">
+            <h3>Explorer's Dream</h3>
+            <span class="price">$799</span>
+          </div>
+          <ul class="pkg-features">
+            <li>7 days / 6 nights</li>
+            <li>4-Star Hotel</li>
+            <li>Guided City Tour</li>
+            <li>Breakfast Included</li>
+          </ul>
+          <button class="btn btn-secondary">Book Now</button>
+        </div>
+        <!-- pkg 2 -->
+        <div class="pkg-card featured">
+          <div class="pkg-header">
+            <h3>Paradise Escape</h3>
+            <span class="price">$1,199</span>
+          </div>
+          <ul class="pkg-features">
+            <li>10 days / 9 nights</li>
+            <li>Beach-side Resort</li>
+            <li>All-Inclusive Meals</li>
+            <li>Free Water Sports</li>
+          </ul>
+          <button class="btn btn-secondary">Book Now</button>
+        </div>
+        <!-- pkg 3 -->
+        <div class="pkg-card">
+          <div class="pkg-header">
+            <h3>City Lights</h3>
+            <span class="price">$649</span>
+          </div>
+          <ul class="pkg-features">
+            <li>5 days / 4 nights</li>
+            <li>Central Boutique Hotel</li>
+            <li>Night Tour &amp; Show</li>
+            <li>Airport Transfers</li>
+          </ul>
+          <button class="btn btn-secondary">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Traverling</h2>
+      <p>We are passionate travelers dedicated to helping you experience the world effortlessly. From curated destinations to hand-picked packages, Traverling is your gateway to adventure, relaxation, and discovery. Our mission is simple: make travel planning enjoyable and stress-free.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <small class="error"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+          <small class="error"></small>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell us your plans..." required></textarea>
+          <small class="error"></small>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Traverling. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
